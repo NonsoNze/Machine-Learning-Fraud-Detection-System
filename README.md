@@ -38,9 +38,9 @@ custom scikit-learn-compatible feature transformer and model persistence via job
 
 A production-style fraud detection pipeline built on real anonymised transaction data from
 the IEEE-CIS Fraud Detection Kaggle competition, provided by Vesta Corporation. This project
-applies the same hybrid ensemble architecture as the synthetic project — combining a supervised
-LightGBM classifier with an unsupervised Isolation Forest — but adapted for the scale and
-complexity of real-world fraud data: genuine class imbalance, high-dimensional sparse features,
+applies the same hybrid ensemble architecture as the synthetic project by combining a supervised
+LightGBM classifier with an unsupervised Isolation Forest, but adapted for the scale and
+complexity of real-world fraud data i.e. genuine class imbalance, high-dimensional sparse features,
 and 590,000 transactions.
 
 A key distinction from the synthetic project is the use of the unlabeled Kaggle test set.
@@ -66,8 +66,8 @@ loading through to a leakage audit and a real-time hybrid scoring interface.
 
 ## Why Two Projects
 
-Both projects use the same hybrid ensemble architecture — supervised classifier combined
-with unsupervised Isolation Forest in an 80/20 blend. What differs is the data, the scale,
+Both projects use the same hybrid ensemble architecture, supervised classifier combined
+with unsupervised Isolation Forest in an 80/20 blend. The difference lies in the data, the scale,
 the models chosen within that architecture, and how the unlabeled test set is used.
 
 | | Synthetic | IEEE-CIS |
